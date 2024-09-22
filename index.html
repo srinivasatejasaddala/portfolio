@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Teja Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+
+
+
+        
+    </head>
+    <body >
+     <div class="nav" onclick="hidevna()">
+        <img src="menuicon2.png" onclick="verticalnavbar()"/>
+         
+        <a onclick="home()">Home</a>
+        <a  onclick="about()">About</a>
+        <a  onclick="skills()">Skills</a>
+        <a onclick="contact()">Contact-Me</a>
+        
+     </div>
+    
+     <div id="vnav" class="vnav">
+       
+        <div class="links">
+            <a onclick="vhome()">Home</a>
+            <a  onclick="vabout()">About</a>
+          <a  onclick="vskills()">Skills</a>
+          <a onclick="vcontact()">Contact-Me</a>
+        </div>
+          
+        
+     
+      
+        
+    
+     </div>
+    
+    
+
+
+
+
+<div class="maindiv" onclick="hidevnav()">
+       
+   
+     <div id="intro" class="intro"  >
+        <h1>Hi, I'm Srinivasa Teja <br>Saddala</h1>
+        <p class="p1">
+          <big>  Computer Science Engineering <br>Student</big>
+        </p>
+        <small><p class="p2">A Final year Undergraduate engineering<br>Student at RGM Engineerin College,<br>Nandyal</p></small>
+        <button class="contact" onclick="contact()">Contact-me&#10148</button>      
+     </div>
+
+
+
+
+
+    
+<div id="about" class="about" >
+    <p>I'm Saddala Srinivasa Teja, a web developer currently pursuing my education at Rajeev Gandhi Memorial College of Engineering. With a strong foundation in programming and web technologies and I'm passionate about creating efficient and user-friendly web applications</p>
+</div>
+
+
+
+
+
+<div id="skills" class="skills">
+    
+    
+            <div class="skl">
+                
+            <button>C</button><br>
+            <button>Java</button><br>
+            <button>Python</button><br>
+            
+            
+            </div>
+    
+        <div class="skl2">
+            <button>HTML</button><br>
+            <button>CSS</button><br>
+            <button>SQL</button><br>
+        </div>
+
+        <div class="skl3">
+            <button>JavaScript</button><br>
+            <button>TailwindCss</button><br>
+            <button>React Js</button><br>
+        </div>
+       
+        
+    </div>
+
+<div id="contactsec" class="contactsec">
+
+    <p>You can contact me at:</p>
+    <p>GitHub: <a href="https://github.com/srinivasatejasaddala">github.com/srinivasatejasaddala</a></p>
+    <p>Hey! You want send an email: <a class="email" href="mailto:tejachaithu409@gmail.com">Send Here</a></p>
+   
+   
+</div>
+
+
+</div>
+
+
+
+
+
+    <script>
+        
+        function verticalnavbar(){
+            document.getElementById('vnav').style.display='block';
+        }
+
+        function home(){
+            document.getElementById("intro").style.display="block";
+            document.getElementById("about").style.display="none";
+            document.getElementById("skills").style.display="none";
+            document.getElementById("contactsec").style.display="none";
+           
+        }
+
+
+        function about(){
+            document.getElementById("intro").style.display="none";
+            document.getElementById("about").style.display="block";
+            document.getElementById("skills").style.display="none";
+            document.getElementById("contactsec").style.display="none";
+            
+          
+        }
+
+        function skills(){
+            document.getElementById("intro").style.display="none";
+            document.getElementById("about").style.display="none";
+            document.getElementById("skills").style.display="block";
+            document.getElementById("contactsec").style.display="none";
+            
+          
+        }
+        function contact(){
+            document.getElementById("intro").style.display="none";
+            document.getElementById("about").style.display="none";
+            document.getElementById("skills").style.display= "none";
+            document.getElementById("contactsec").style.display="block";
+            
+          
+        }
+
+
+
+
+        function vhome(){
+              document.getElementById('vnav').style.display='none';
+           
+            document.getElementById("intro").style.display="block";
+            document.getElementById("about").style.display="none";
+            document.getElementById("skills").style.display="none";
+            document.getElementById("contactsec").style.display="none";
+           
+        }
+
+
+        function vabout(){
+              document.getElementById('vnav').style.display='none';
+           
+            document.getElementById("intro").style.display="none";
+            document.getElementById("about").style.display="block";
+            document.getElementById("skills").style.display="none";
+            document.getElementById("contactsec").style.display="none";
+            
+          
+        }
+
+        function vskills(){
+              document.getElementById('vnav').style.display='none';
+           
+
+            document.getElementById("intro").style.display="none";
+            document.getElementById("about").style.display="none";
+            document.getElementById("skills").style.display="block";
+            document.getElementById("contactsec").style.display="none";
+            
+          
+        }
+        function vcontact(){
+              document.getElementById('vnav').style.display='none';
+           
+            document.getElementById("intro").style.display="none";
+            document.getElementById("about").style.display="none";
+            document.getElementById("skills").style.display= "none";
+            document.getElementById("contactsec").style.display="block";
+            
+          
+        }
+
+
+        function hidevnav(){
+            document.getElementById('vnav').style.display='none';
+        }
+    </script>
+
+
+    </body>
+
+
+   
+</html>
